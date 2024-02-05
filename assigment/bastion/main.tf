@@ -1,7 +1,3 @@
-module "vpc" {
-  source = "../vpc"
-}
-
 resource "aws_security_group" "bastion_sg" {
   name        = "bastion-security-group"
   description = "Security group for the EC2 instance"
